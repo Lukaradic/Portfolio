@@ -1,0 +1,71 @@
+@import "../../utility/breakpoints.scss";
+
+nav {
+  font-size: 10px;
+  padding: 10px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba($color: #eee, $alpha: 0.1);
+  .list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+    height: 0px;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    padding: 0px;
+    @include for-desktop-up {
+      padding: 7px 15px;
+      height: auto;
+      justify-content: flex-end;
+    }
+    &-item {
+      display: inline-block;
+      @include for-desktop-up {
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+      &:after {
+        content: "";
+        width: 0px;
+        height: 2px;
+        background-color: #333;
+        display: block;
+        transition: all 0.2s ease;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+    @include for-desktop-up {
+      flex-direction: row;
+    }
+  }
+
+  label {
+    padding: 15px;
+  }
+  #bars {
+    display: none;
+  }
+  #bars:checked ~ .list {
+    height: 200px;
+    padding: 20px 0px;
+  }
+  label {
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+  .bars-icon {
+    font-size: 2em;
+  }
+}
