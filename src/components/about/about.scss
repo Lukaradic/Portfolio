@@ -1,12 +1,19 @@
+@import "../../utility/breakpoints.scss";
 #about {
   position: absolute;
-  bottom: -50%;
-  max-width: 600px;
+  bottom: -200px;
+  max-width: 700px;
   background-color: white;
   border-radius: 15px;
   padding: 15px 25px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px -5px 20px rgba($color: black, $alpha: 0.2);
+  margin: 0px 15px;
+  @include for-desktop-up {
+    bottom: -100px;
+    padding: 25px 50px;
+  }
   .about-title {
     margin-bottom: 25px;
     font-weight: 100;

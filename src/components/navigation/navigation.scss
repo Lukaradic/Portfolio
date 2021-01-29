@@ -6,7 +6,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba($color: #eee, $alpha: 0.1);
+  background-color: rgba($color: #eee, $alpha: 0.6);
+  z-index: 99;
   .list {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,43 @@
+@import "../../utility/variables.scss";
+
+#work {
+  background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
+  height: 300px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .work-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+  }
+  .work-button {
+    display: inline-block;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+    border-radius: $border-radius;
+    &:hover {
+      background-color: white;
+      color: #333;
+    }
+  }
+}
