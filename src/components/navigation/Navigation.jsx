@@ -7,7 +7,7 @@ export default function Navigation() {
   return (
     <nav>
       <input type="checkbox" id="bars" />
-      <label for="bars">
+      <label htmlFor="bars">
         <FaBars className="bars-icon" />
       </label>
       <ul className="list">

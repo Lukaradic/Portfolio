@@ -17,7 +17,7 @@ export default function Experience() {
 
   function createDiv() {
     return data.map((item, i) => (
-      <div className="experience-div">
+      <div className="experience-div" key={i}>
         <span className="experience-div-title">{item.title}</span>
         <span className="experience-div-company">{item.company}</span>
         <span className="experience-div-date">{item.date}</span>

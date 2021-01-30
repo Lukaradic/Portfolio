@@ -2,14 +2,11 @@
 @import "../../utility/variables.scss";
 
 #skills {
-  padding-top: 200px;
-
+  padding: 200px $padding 100px $padding;
+  background-color: #eee;
   .skills-div {
     .skills-title {
-      text-align: center;
-      font-size: 48px;
-      font-weight: 100;
-      margin-bottom: 100px;
+      @include heading;
     }
   }
   .skills-icons {
@@ -18,19 +15,30 @@
     gap: 50px;
     justify-content: center;
     &-div {
+      background-color: white;
       min-height: 200px;
       margin-bottom: 25px;
-      border: 1px solid #eee;
+      // border: 1px solid #eee;
       padding: 25px;
       border-radius: $border-radius;
       display: flex;
       justify-content: space-around;
       flex-direction: column;
       align-items: center;
+      transition: all 0.2s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
       .skills-icon {
         font-size: 48px;
         margin-bottom: 25px;
       }
+    }
+  }
+  .skills-list {
+    margin: 50px auto;
+    &-title {
+      @include heading;
     }
   }
 }

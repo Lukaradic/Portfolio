@@ -13,10 +13,17 @@ export default function About() {
       </p>
       <ul className="list">
         <li className="list-item">
-          <FaGithub className="list-icon" />
+          <a href="https://github.com/Lukaradic" target="_blank">
+            <FaGithub className="list-icon" />
+          </a>
         </li>
         <li className="list-item">
-          <FaLinkedinIn className="list-icon" />
+          <a
+            href="https://www.linkedin.com/in/luka-radic-b3529215b/"
+            target="_blank"
+          >
+            <FaLinkedinIn className="list-icon" />
+          </a>
         </li>
       </ul>
     </div>

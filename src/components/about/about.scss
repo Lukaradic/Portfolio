@@ -1,10 +1,12 @@
 @import "../../utility/breakpoints.scss";
+@import "../../utility/variables.scss";
+
 #about {
   position: absolute;
   bottom: -200px;
   max-width: 700px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: $border-radius;
   padding: 15px 25px;
   display: flex;
   flex-direction: column;

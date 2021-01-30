@@ -44,7 +44,10 @@ export default function Skills() {
             <h4 className="skills-icons-text">Fast Learner</h4>
           </div>
         </div>
-        <ul className="list">{renderList()}</ul>
+        <h4 className="skills-list-title">Coing Skills</h4>
+        <div className="skills-list">
+          <ul className="list">{renderList()}</ul>
+        </div>
       </div>
     </section>
   );
