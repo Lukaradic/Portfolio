@@ -2,7 +2,7 @@
 @import "../../utility/variables.scss";
 
 #skills {
-  padding: 200px $padding 100px $padding;
+  padding: 300px $padding 100px $padding;
   background-color: #eee;
   .skills-div {
     .skills-title {
@@ -37,6 +37,20 @@
   }
   .skills-list {
     margin: 50px auto;
+    column-count: 2;
+    max-width: 300px;
+    @include for-desktop-up {
+      column-count: 4;
+      max-width: 900px;
+    }
+    .list {
+      padding: 0px;
+      &-item {
+        margin-bottom: 25px;
+        font-size: 22px;
+        text-transform: capitalize;
+      }
+    }
     &-title {
       @include heading;
     }

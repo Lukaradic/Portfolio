@@ -29,7 +29,7 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="skills-div">
-        <h4 className="skills-title">My Skills</h4>
+        {/* <h4 className="skills-title">My Skills</h4> */}
         <div className="skills-icons">
           <div className="skills-icons-div">
             <FaEye className="skills-icon" />

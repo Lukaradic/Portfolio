@@ -1,5 +1,12 @@
+@import "./breakpoints.scss";
+
 $padding: 15px;
 $border-radius: 5px;
+
+$white: #fcfcff;
+$red: #ee6055;
+$black: #333;
+$blue: #50b2c0;
 
 @mixin heading {
   text-align: center;
@@ -7,4 +14,7 @@ $border-radius: 5px;
   font-size: 48px;
   margin: 50px auto;
   letter-spacing: 10px;
+  @include for-desktop-up {
+    margin: 100px auto;
+  }
 }
